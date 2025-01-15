@@ -241,12 +241,12 @@
 
 .editor {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    background-image: url('PHOTO/image1_0.jpg');
+    background-image: url('PHOTO/Screenshot\ 2025-01-15\ 223025.png');
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 50vh;
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
@@ -259,10 +259,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('PHOTO/image1_0.jpg');
-    /* background-size: cover; */
-    /* background-position: center; */
-    filter: blur(5px);
+    background-image: url('PHOTO/Screenshot\ 2025-01-15\ 223025.png');
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(0px); */
     /* Apply blur here */
     z-index: 0;
 }
@@ -271,12 +271,15 @@
 .editor strong {
     position: relative;
     z-index: 0;
-
+    color: rgb(255, 255, 255);
+}
+.editor img{
+    width: 100px;
 }
 
 .editor strong {
-    font-size: 60px;
-    color: white;
+    font-size: 50px;
+   
 }
 
 /* ----------------------------view editor */
@@ -317,7 +320,7 @@
     gap: 0px; 
     grid-template-columns: auto auto auto auto; 
     grid-template-rows: auto auto; 
-    /* margin-left: 80px; */
+    margin-bottom: 50px;
 }
 
 .view__img a {
@@ -339,8 +342,96 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
+/* ---------------------------portfolio------------ */
+
+.Portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    font-size: 50px;
+    background-image: url('PHOTO/Screenshot\ 2025-01-15\ 222750.png');   
+    margin: 30px;
+}
+
+.Portfolio .Portfolio__container .Portfolio__img{
+    font-size: 100px;
+    background-color: blueviolet; 
+    color: white;  
+    padding: 35px;
+    border-radius: 50%;
+}
+.Portfolio .Portfolio__container .Portfolio__header{
+    color: rgb(255, 255, 255);
+}
 
 
+/* --------------------------------------------designed ----------------- */
 
+.Designed .Designed__header,.Designed__containt, .Designed__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+}
 
+.Designed .Designed__btn .btn{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    font-size: 25px;
+    padding: 5px 35px;
+    font-weight: 500;
+    margin-top: 20px;
+   
+}
 
+.Designed .Designed__btn .btn:hover{
+    background-color: rgb(62, 58, 58);
+    cursor: pointer;
+}
+
+.hayden{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.quests{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('PHOTO/Screenshot\ 2025-01-15\ 142926.png');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    font-size: 50px;
+    color: white;
+    gap : 20px;
+}
+.quests i{
+    background-color: rgb(19, 16, 55);
+    color: white;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.Quests__container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 500px auto;
+    gap: 20px;
+    
+}
+.Quests__container img{
+    width: 40vw;
+}
+.fa-trophy{
+    
+}
