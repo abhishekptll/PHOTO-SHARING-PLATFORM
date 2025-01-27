@@ -16,27 +16,47 @@
 </head>
 
 <body>
-    <input type="checkbox" id="check">
-    <section class="nav">
-        <div class="nav__container" style="background-color: white;">
-            <ul>
-                <li><a href=""><img src="photo/500px LOGO.png" alt="logo"></a></li>
-                <li><a href="">Discover</a></li>
-                <li><a href="">Licensing</a></li>
-                <li><a href="">Memberships</a></li>
-                <li><a href="">Quests</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">2024 Awards</a></li>
-            </ul>
+    <nav>
+        <div class="logo">
+          <a href="#"><img src="PHOTO/500px LOGO.png" alt="Logo"></a>
         </div>
-        <ul class="login">
-            <li><a href="">Login</a></li>
-            <li><a class="sign" href="">Signup</a></li>
-        </ul>
-        <label for="check">
+    
+        <!-- Desktop Menu -->
+        <div class="menu">
+          <a href="#discover">Discover</a>
+          <a href="#licensing">Licensing</a>
+          <a href="#memberships">Memberships</a>
+          <a href="#quests">Quests</a>
+          <a href="#blog">Blog</a>
+          <a href="#awards">2024 Awards</a>
+        </div>
+    
+        <!-- Search Box -->
+        <div class="search-box">
+          <input type="text" placeholder="Search powered by AI">
+          <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+          <span class="new">New</span>
+        </div>
+    
+        <!-- Hamburger Menu Icon -->
+        <label for="toggle-menu" class="hamburger">
             <i class="fa-solid fa-bars"></i>
         </label>
-    </section>
+    
+        <!-- Small Screen Menu -->
+        <input type="checkbox" id="toggle-menu">
+        <div class="menu-small">
+          <a href="#discover">Discover</a>
+          <a href="#licensing">Licensing</a>
+          <a href="#memberships">Memberships</a>
+          <a href="#quests">Quests</a>
+          <a href="#blog">Blog</a>
+          <a href="#awards">2024 Awards</a>
+        </div>
+      </nav>
+
+
+
 
     <section class="landing">
         <div class="landing__header">
