@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Quests UI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html"><img src="PHOTO/500px LOGO.png" alt="Logo"></a>
+    </div>
+
+    <!-- Desktop Menu -->
+    <div class="menu">
+      <a href="discover.html">Discover</a>
+      <a href="#licensing">Licensing</a>
+      <a href="#memberships">Memberships</a>
+      <a href="Quests.html">Quests</a>
+      <a href="#blog">Blog</a>
+      <a href="#awards">2024 Awards</a>
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" placeholder="Search powered by AI">
+      <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Search Icon">
+      <span class="new">New</span>
+    </div>
+
+    <!-- Hamburger Menu Icon -->
+    <label for="toggle-menu" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+
+    <!-- Small Screen Menu -->
+    <input type="checkbox" id="toggle-menu">
+    <div class="menu-small">
+      <a href="discover.html">Discover</a>
+      <a href="#licensing">Licensing</a>
+      <a href="#memberships">Memberships</a>
+      <a href="Quests.html">Quests</a>
+      <a href="#blog">Blog</a>
+      <a href="#awards">2024 Awards</a>
+    </div>
+  </nav>
+
+  <div class="header-banner">
+    Join our Community Quests and win exciting rewards with your photography!
+  </div>
+
+  <div class="main-container">
+    <div class="main-title">Active Quests</div>
+    <input type="checkbox" id="show-more-toggle" class="show-more-toggle">
+    <div class="quest-grid">
+      <!-- Card 1 -->
+      <div class="quest-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSiWOqi7avCD9y1ggWXRYTXMdVqcGt170J-w&s" alt="Minimalist Monday" class="quest-image">
+        <div class="quest-content">
+          <div class="quest-title">"Minimalist" Monday</div>
+          <div class="quest-meta">1 day left</div>
+          <div class="quest-footer">
+            <div class="quest-reward">$120 USD</div>
+            <div class="quest-days-left">By: Pulsepex</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="quest-card">
+        <img src="data:image/jpeg;base64,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" alt="Vibrant Colors" class="quest-image">
+        <div class="quest-content">
+          <div class="quest-title">Vibrant Colors</div>
+          <div class="quest-meta">1 day left</div>
+          <div class="quest-footer">
+            <div class="quest-reward">$100 USD</div>
+            <div class="quest-days-left">By: Pulsepex</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="quest-card">
+        <img src="data:image/jpeg;base64,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" alt="Canvas of Nature" class="quest-image">
+        <div class="quest-content">
+          <div class="quest-title">Canvas of Nature</div>
+          <div class="quest-meta">1 day left</div>
+          <div class="quest-footer">
+            <div class="quest-reward">$100 USD</div>
+            <div class="quest-days-left">By: Pulsepex</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="quest-card">
+        <img src="https://cdn.pulsepx.com/quest-covers/1102272/3a35bbf81543422401aa5c25c7111559fb6bd9ff1b40baed749931a9e4dbc1fc.jpg" alt="Shot of the Week" class="quest-image">
+        <div class="quest-content">
+          <div class="quest-title">Shot of the Week</div>
+          <div class="quest-meta">3 days left</div>
+          <div class="quest-footer">
+            <div class="quest-reward">$480 USD</div>
+            <div class="quest-days-left">By: Pulsepex</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+     <div class="quest-card">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.820Gz9JsPEzxf7lgV_wi5QAAAA&pid=Api&P=0&h=220">
+     
+        <div class="quest-content">
+          <div class="quest-title">Urban Wonders</div>
+          <div class="quest-meta">2 days left</div>
+          <div class="quest-footer">
+            <div class="quest-reward">$150 USD</div>
+            <div class="quest-days-left">By: Pulsepex</div>
+          </div>
+        </div>
+      </div>  
+
+      <!-- Card 6 -->
+      <div class="quest-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9tPlAcXv9c6Hci2wpSOhJtEMRHNGKrVCGYQ&s" alt="Golden Hour" class="quest-image">
+        <div class="quest-content">
+          <div class="quest-title">Golden Hour</div>
+          <div class="quest-meta">5 days left</div>
+          <div class="quest-footer">
+            <div class="quest-reward">$200 USD</div>
+            <div class="quest-days-left">By: Pulsepex</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="quest-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr7Y1oggH1siNA0wYoDBodYAqDuCQzsuVeYA&s" alt="Abstract Vibes" class="quest-image">
+        <div class="quest-content">
+          <div class="quest-title">Abstract Vibes</div>
+          <div class="quest-meta">4 days left</div>
+          <div class="quest-footer">
+            <div class="quest-reward">$90 USD</div>
+            <div class="quest-days-left">By: Pulsepex</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="quest-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6kzPBCcIAXiG_-2i7DoaAtUBAc64QPysobg&s" alt="Monochrome Magic" class="quest-image">
+        <div class="quest-content">
+          <div class="quest-title">Monochrome Magic</div>
+          <div class="quest-meta">6 days left</div>
+          <div class="quest-footer">
+            <div class="quest-reward">$170 USD</div>
+            <div class="quest-days-left">By: Pulsepex</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="quest-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAi9psflJ1I4UPRrSkB-7yWZaWUdSQ8p_03Q&s" alt="Nature's Palette" class="quest-image">
+        <div class="quest-content">
+          <div class="quest-title">Nature's Palette</div>
+          <div class="quest-meta">2 days left</div>
+          <div class="quest-footer">
+            <div class="quest-reward">$300 USD</div>
+            <div class="quest-days-left">By: Pulsepex</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="quest-card">
+        <img src="data:image/jpeg;base64,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" alt="Street Stories" class="quest-image">
+        <div class="quest-content">
+          <div class="quest-title">Street Stories</div>
+          <div class="quest-meta">1 day left</div>
+          <div class="quest-footer">
+            <div class="quest-reward">$110 USD</div>
+            <div class="quest-days-left">By: Pulsepex</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="quest-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQESxlCi4JBIfzqvUowvWpnY1P4qyKiqQHCEA&s" alt="Portraits in Focus" class="quest-image">
+        <div class="quest-content">
+          <div class="quest-title">Portraits in Focus</div>
+          <div class="quest-meta">7 days left</div>
+          <div class="quest-footer">
+            <div class="quest-reward">$250 USD</div>
+            <div class="quest-days-left">By: Pulsepex</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="quest-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1KGM722BeEzth4utfhvq86Mg96mx9aI_DSA&s" alt="Dreamscapes" class="quest-image">
+        <div class="quest-content">
+          <div class="quest-title">Dreamscapes</div>
+          <div class="quest-meta">3 days left</div>
+          <div class="quest-footer">
+            <div class="quest-reward">$400 USD</div>
+            <div class="quest-days-left">By: Pulsepex</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="show-more-section">
+      <label for="show-more-toggle" class="show-more-button">
+        <i class="show-more-icon">↓</i> Show More
+      </label>
+    </div>
+  </div>
+</body>
+</html>

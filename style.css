@@ -441,8 +441,8 @@ nav {
 
 .getapp .getappimg img {
     width: 50%;
-    max-width: 500px;
-    min-width: 300px;
+    /* max-width: 500px;
+    min-width: 300px; */
 
 }
 
@@ -497,24 +497,23 @@ nav {
 
     .getapp .getappimg img {
         width: 70%;
-        /* Reduce image size */
+        
     }
 
     .download-buttons {
         justify-content: center;
-        /* Center-align buttons */
+
     }
 
     .download-buttons a {
         font-size: 12px;
-        /* Reduce button font size */
+
         padding: 8px 12px;
-        /* Adjust padding for smaller buttons */
+
     }
 
     .download-buttons a strong {
         font-size: 14px;
-        /* Adjust size for better fit */
     }
 }
 
@@ -705,9 +704,6 @@ nav {
     max-width: 1200px;
 }
 
-.view__img a {
-}
-
 .view__img a img {
     width: 100%;
     object-fit: cover;
@@ -820,8 +816,8 @@ nav {
 }
 
 .Designed {
-    text-align: center; /* Center-align all content */
-    margin: 40px 20px; /* Add some spacing around the section */
+    text-align: center;
+    margin: 40px 20px; 
 }
 
 .Designed .Designed__header h1 {
@@ -832,10 +828,10 @@ nav {
 
 .Designed .Designed__containt p {
     font-size: 18px;
-    color: #555; /* Slightly muted text for better readability */
-    max-width: 800px; /* Limit the content width */
-    margin: 0 auto 20px; /* Center-align with auto margin */
-    line-height: 1.6; /* Add better spacing between lines */
+    color: #555; 
+    max-width: 800px; 
+    margin: 0 auto 20px; 
+    line-height: 1.6; 
 }
 
 .Designed .Designed__btn .btn {
@@ -857,33 +853,33 @@ nav {
 
 @media (max-width: 768px) {
     .Designed .Designed__header h1 {
-        font-size: 28px; /* Reduce font size for smaller screens */
+        font-size: 28px; 
     }
 
     .Designed .Designed__containt p {
-        font-size: 16px; /* Adjust paragraph font size */
-        padding: 0 15px; /* Add some padding to avoid edge contact */
+        font-size: 16px; 
+        padding: 0 15px; 
     }
 
     .Designed .Designed__btn .btn {
-        font-size: 18px; /* Reduce button text size */
-        padding: 8px 25px; /* Adjust padding for compactness */
+        font-size: 18px; 
+        padding: 8px 25px; 
     }
 }
 
 @media (max-width: 480px) {
     .Designed .Designed__header h1 {
-        font-size: 24px; /* Further reduce font size for mobile */
+        font-size: 24px; 
     }
 
     .Designed .Designed__containt p {
-        font-size: 14px; /* Smaller text for mobile */
-        line-height: 1.5; /* Slightly tighter spacing */
+        font-size: 14px; 
+        line-height: 1.5; 
     }
 
     .Designed .Designed__btn .btn {
-        font-size: 16px; /* Smaller button text */
-        padding: 6px 20px; /* Compact padding */
+        font-size: 16px; 
+        padding: 6px 20px; 
     }
 }
 
@@ -938,34 +934,34 @@ nav {
 
 @media (max-width: 768px) {
     .quests {
-        font-size: 40px; /* Adjust font size for smaller screens */
-        height: auto; /* Allow height to adjust dynamically */
-        padding: 20px; /* Add padding for better spacing */
+        font-size: 40px; 
+        height: auto; 
+        padding: 20px; 
     }
 
     .quests i {
-        font-size: 30px; /* Reduce icon size */
-        padding: 15px; /* Adjust padding */
+        font-size: 30px; 
+        padding: 15px; 
     }
 
     .quests strong {
-        font-size: 24px; /* Adjust text size */
+        font-size: 24px; 
     }
 }
 
 @media (max-width: 480px) {
     .quests {
-        font-size: 28px; /* Further reduce font size */
-        gap: 15px; /* Reduce spacing */
+        font-size: 28px; 
+        gap: 15px;
     }
 
     .quests i {
-        font-size: 24px; /* Smaller icon */
-        padding: 10px; /* Compact padding */
+        font-size: 24px; 
+        padding: 10px; 
     }
 
     .quests strong {
-        font-size: 20px; /* Smaller text size */
+        font-size: 20px;
     }
 }
 
@@ -1422,4 +1418,142 @@ nav {
       font-size: 0.8rem;
       padding: 6px 10px;
     }
+  }
+
+
+
+
+
+
+/* -------------------------------this this quides page------------------------------------------------------------- */
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Header Banner */
+  .header-banner {
+    text-align: center;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4, #fbc2eb);
+    color: #333;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  /* Main Container */
+  .main-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .main-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* Quest Grid */
+  .quest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  /* Quest Card */
+  .quest-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+
+  .quest-card:hover {
+    transform: scale(1.03);
+  }
+
+  .quest-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .quest-content {
+    padding: 1rem;
+  }
+
+  .quest-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .quest-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+  }
+
+  .quest-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .quest-reward {
+    color: #28a745;
+    font-weight: bold;
+  }
+
+  .quest-days-left {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  /* Show More Section */
+  .show-more-section {
+    margin: 2rem auto;
+    text-align: center;
+  }
+
+  .show-more-toggle {
+    display: none;
+  }
+
+  .show-more-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .show-more-button:hover {
+    background-color: #0056b3;
+  }
+
+  .show-more-icon {
+    font-size: 1.2rem;
+  }
+
+  /* Hidden Cards */
+  .quest-card:nth-child(n+9) {
+    display: none;
+  }
+
+  .show-more-toggle:checked ~ .quest-grid .quest-card {
+    display: block;
   }
