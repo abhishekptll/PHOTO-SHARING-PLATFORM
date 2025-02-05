@@ -14,7 +14,9 @@ nav {
     align-items: center;
     padding: 10px 20px;
     background-color: white;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; 
+    z-index: 5;
+    
 }
 
 .logo img {
@@ -121,7 +123,7 @@ nav {
     gap: 15px;
     margin-top: 10px;
     position: absolute;
-    bottom: 45%;
+    bottom: 58%;
     left: 0;
     right: 0;
     background-color: white;
@@ -222,61 +224,47 @@ nav {
 @media (max-width: 768px) {
     .landing .landing__header {
         top: 20%;
-        /* Adjust header position */
         left: 50%;
-        /* Center-align header */
         transform: translateX(-50%);
-        /* Center-align horizontally */
         text-align: center;
-        /* Center-align text */
     }
 
     .landing .landing__header h1 {
         font-size: 36px;
-        /* Smaller font for smaller screens */
     }
 
     .landing .landing__header p {
         font-size: 14px;
-        /* Adjust paragraph font size */
     }
 
     .landing .landing__header button {
         padding: 12px 25px;
-        /* Adjust button size */
         font-size: 16px;
     }
 }
 
-/* For mobile phones (480px and below) */
+
 @media (max-width: 480px) {
     .landing {
         background-position: center;
-        /* Center background image */
         height: auto;
-        /* Let height adjust automatically */
     }
 
     .landing .landing__header {
         top: 10%;
-        /* Adjust position */
         padding: 0 20px;
-        /* Add padding to prevent text cutoff */
     }
 
     .landing .landing__header h1 {
         font-size: 28px;
-        /* Smaller font for smaller screens */
     }
 
     .landing .landing__header p {
         font-size: 12px;
-        /* Adjust paragraph font size */
     }
 
     .landing .landing__header button {
         padding: 10px 20px;
-        /* Further reduce button size */
         font-size: 14px;
     }
 }
@@ -373,55 +361,44 @@ nav {
 
     .card__container .card {
         width: 45%;
-        /* Two cards per row */
         min-width: auto;
     }
 
     .card__container .card i {
         font-size: 30px;
-        /* Reduce icon size */
     }
 
     .card__container .card h2 {
         font-size: 18px;
-        /* Reduce title size */
     }
 
     .card__container .card p {
         font-size: 14px;
-        /* Smaller text for better fit */
     }
 }
 
 @media (max-width: 480px) {
     .card__container {
         flex-direction: column;
-        /* Stack cards vertically */
         gap: 20px;
-        /* Maintain spacing between cards */
         padding: 10px;
     }
 
     .card__container .card {
         width: 90%;
-        /* Full width minus padding */
         margin: 0 auto;
-        /* Center cards */
     }
 
     .card__container .card i {
         font-size: 28px;
-        /* Smaller icons */
     }
 
     .card__container .card h2 {
         font-size: 16px;
-        /* Adjust title font size */
     }
 
     .card__container .card p {
         font-size: 12px;
-        /* Smaller text for compact design */
     }
 }
 
@@ -441,8 +418,7 @@ nav {
 
 .getapp .getappimg img {
     width: 50%;
-    /* max-width: 500px;
-    min-width: 300px; */
+  
 
 }
 
@@ -478,7 +454,7 @@ nav {
 .getapp .getapp__header {
     width: 50%;
     min-width: 300px;
-    /* Ensure header doesn't shrink too much */
+    
 }
 
 @media (max-width: 768px) {
@@ -486,7 +462,6 @@ nav {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        /* Center-align content for tablets */
         gap: 30px;
     }
 
@@ -546,8 +521,6 @@ nav {
     background-image: url('PHOTO/Screenshot\ 2025-01-15\ 223025.png');
     background-size: cover;
     background-position: center;
-    /* filter: blur(0px); */
-    /* Apply blur here */
     z-index: 0;
 }
 
@@ -573,18 +546,15 @@ nav {
 @media (max-width: 768px) {
     .editor {
         height: 40vh;
-        /* Reduce height */
         padding: 10px;
     }
 
     .editor img {
         width: 80px;
-        /* Smaller image size */
     }
 
     .editor strong {
         font-size: 36px;
-        /* Adjust font size */
     }
 }
 
@@ -592,18 +562,15 @@ nav {
 @media (max-width: 480px) {
     .editor {
         height: 30vh;
-        /* Compact height */
         padding: 10px;
     }
 
     .editor img {
         width: 60px;
-        /* Even smaller image size */
     }
 
     .editor strong {
         font-size: 28px;
-        /* Reduce font size */
     }
 }
 
@@ -656,40 +623,31 @@ nav {
 @media (max-width: 768px) {
     .view .view__header h1 {
         font-size: 28px;
-        /* Reduce heading size */
     }
 
     .view .view__content p {
         font-size: 14px;
-        /* Smaller text size */
         padding: 0 10px;
-        /* Add padding for narrower screens */
     }
 
     .btn .custom-button {
         padding: 12px 20px;
-        /* Smaller button padding */
         font-size: 16px;
-        /* Adjust font size */
     }
 }
 
 @media (max-width: 480px) {
     .view .view__header h1 {
         font-size: 24px;
-        /* Further reduce heading size */
     }
 
     .view .view__content p {
         font-size: 12px;
-        /* Smaller text size */
     }
 
     .btn .custom-button {
         padding: 10px 15px;
-        /* Compact button padding */
         font-size: 14px;
-        /* Smaller font size */
     }
 }
 
@@ -1557,3 +1515,131 @@ nav {
   .show-more-toggle:checked ~ .quest-grid .quest-card {
     display: block;
   }
+
+
+  /* -------------------------------------  award section */
+
+
+  /* styles.css */
+    
+   
+  .award-header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .award-header a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  .award-countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0;
+  }
+  
+  .award-time {
+    text-align: center;
+  }
+  
+  .award-time h2 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .award-time p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .award-description {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  .award-description a {
+    color: #4caf50;
+    text-decoration: none;
+  }
+  
+  .award-images .award-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  
+  .award-gallery img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .award-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .award-sponsors {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+  }
+  
+  .award-sponsors img {
+    height: 50px;
+  }
+  
+  /* Responsive styles for tablets */
+  @media (max-width: 768px) {
+    .award-countdown {
+      gap: 15px;
+    }
+  
+    .award-time h2 {
+      font-size: 2.5rem;
+    }
+  
+    .award-images .award-gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .award-sponsors img {
+      height: 40px;
+    }
+  }
+  
+  /* Responsive styles for mobile devices */
+  @media (max-width: 480px) {
+    .award-countdown {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .award-time h2 {
+      font-size: 2rem;
+    }
+  
+    .award-time p {
+      font-size: 0.9rem;
+    }
+  
+    .award-images .award-gallery {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .award-sponsors img {
+      height: 30px;
+    }
+  }
+  
