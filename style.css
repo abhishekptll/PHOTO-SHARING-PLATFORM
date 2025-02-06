@@ -1518,9 +1518,6 @@ nav {
 
 
   /* -------------------------------------  award section */
-
-
-  /* styles.css */
     
    
   .award-header {
@@ -1598,7 +1595,7 @@ nav {
     height: 50px;
   }
   
-  /* Responsive styles for tablets */
+  
   @media (max-width: 768px) {
     .award-countdown {
       gap: 15px;
@@ -1617,7 +1614,7 @@ nav {
     }
   }
   
-  /* Responsive styles for mobile devices */
+  
   @media (max-width: 480px) {
     .award-countdown {
       flex-direction: column;
@@ -1643,3 +1640,137 @@ nav {
     }
   }
   
+
+  /* ------------------------------------------  licensing--------------------------------------- */
+
+
+
+  .Licensing-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Licensing-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.Licensing-container h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.Licensing-container p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.Licensing-container ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.Licensing-container li {
+    margin: 5px 0;
+}
+
+.Licensing-sidebar {
+    float: left;
+    width: 25%;
+    margin-right: 20px;
+}
+
+.Licensing-content {
+    float: left;
+    width: 70%;
+}
+
+.Licensing-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Licensing-sidebar li {
+    margin: 10px 0;
+}
+
+.Licensing-sidebar a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.Licensing-sidebar a:hover {
+    text-decoration: underline;
+}
+
+.Licensing-footer {
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.Licensing-footer a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.Licensing-footer a:hover {
+    text-decoration: underline;
+}
+
+.Licensing-highlight {
+    background: #eef5ff;
+    padding: 10px;
+    border-left: 4px solid #0073e6;
+}
+
+@media (max-width: 768px) {
+    .Licensing-sidebar {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .Licensing-content {
+        float: none;
+        width: 100%;
+    }
+
+    .Licensing-container {
+        padding: 10px;
+    }
+
+    .Licensing-container h1 {
+        font-size: 20px; 
+    }
+
+    .Licensing-container h2 {
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .Licensing-container h1 {
+        font-size: 18px;
+    }
+
+    .Licensing-container h2 {
+        font-size: 16px;
+    }
+
+    .Licensing-container {
+        padding: 5px;
+    }
+
+    .Licensing-footer {
+        font-size: 12px;
+    }
+}
