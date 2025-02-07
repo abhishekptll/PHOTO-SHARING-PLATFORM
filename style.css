@@ -665,7 +665,6 @@ nav {
 .view__img a img {
     width: 100%;
     object-fit: cover;
-    /* border-radius: 8px;  */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -680,9 +679,6 @@ nav {
         gap: 10px;
     }
 
-    /* .view__img a img {
-        width: 100%;
-    } */
 }
 
 @media (max-width: 480px) {
@@ -691,9 +687,6 @@ nav {
         gap: 8px;
     }
 
-    /* .view__img a img {
-        width: 100%;
-    } */
 }
 
 /* ---------------------------portfolio------------ */
@@ -729,9 +722,6 @@ nav {
     margin-top: 10px;
 }
 
-/* .Portfolio .Portfolio__container .Portfolio__header {
-    color: rgb(255, 255, 255);
-} */
 
 @media (max-width: 768px) {
     .Portfolio {
@@ -969,57 +959,57 @@ nav {
 
 @media (max-width: 768px) {
     .Quests__container {
-        flex-direction: column; /* Stack items vertically */
-        gap: 30px; /* Increase spacing between stacked elements */
+        flex-direction: column;
+        gap: 30px; 
     }
 
     .Quests__container img {
-        width: 80%; /* Adjust image width for better fit */
-        margin: 0 auto; /* Center the image */
+        width: 80%; 
+        margin: 0 auto; 
     }
 
     .Quests__container .Quests__containt {
-        text-align: center; /* Center align the content */
-        padding: 0 20px; /* Add padding for spacing */
+        text-align: center; 
+        padding: 0 20px; 
     }
 
     .Quests__container .Quests__containt h1 {
-        font-size: 24px; /* Reduce font size for better readability */
+        font-size: 24px;
     }
 
     .Quests__container .Quests__containt p {
-        font-size: 16px; /* Adjust font size for readability */
-        line-height: 1.6; /* Improve line spacing */
+        font-size: 16px; 
+        line-height: 1.6; 
     }
 
     .Quests__container .Quests__containt .trophy {
-        font-size: 40px; /* Adjust trophy size */
+        font-size: 40px;
     }
 
     .Quests__container .Quests__containt button {
-        font-size: 18px; /* Adjust button font size */
-        padding: 8px 30px; /* Adjust padding for smaller screens */
-    }
+        font-size: 18px; 
+        padding: 8px 30px; 
+       }
 }
 
 /* For mobile screens */
 @media (max-width: 480px) {
     .Quests__container img {
-        width: 100%; /* Full width for small screens */
+        width: 100%; 
     }
 
     .Quests__container .Quests__containt h1 {
-        font-size: 20px; /* Further reduce font size */
+        font-size: 20px; 
     }
 
     .Quests__container .Quests__containt p {
-        font-size: 14px; /* Smaller font for mobile readability */
-        line-height: 1.4; /* Tighter line spacing */
+        font-size: 14px; 
+        line-height: 1.4; 
     }
 
     .Quests__container .Quests__containt button {
-        font-size: 16px; /* Slightly smaller button text */
-        padding: 6px 25px; /* Adjust padding */
+        font-size: 16px; 
+        padding: 6px 25px; 
     }
 }
 
@@ -1383,7 +1373,7 @@ nav {
 
 
 
-/* -------------------------------this this quides page------------------------------------------------------------- */
+/* ------------------------------- this quides page------------------------------------------------------------- */
   
   body {
     font-family: Arial, sans-serif;
